@@ -15,6 +15,7 @@ export default function StorePage() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
   const [scrollY, setScrollY] = useState(0)
   const [currentPage, setCurrentPage] = useState(1)
+  const [windowSize, setWindowSize] = useState({ width: 0, height: 0 })
   const heroRef = useRef<HTMLDivElement>(null)
   const supabase = createClient()
 
@@ -30,17 +31,27 @@ export default function StorePage() {
   }, [supabase])
 
   useEffect(() => {
+    // Initialize window size
+    setWindowSize({ width: window.innerWidth, height: window.innerHeight })
+
     const handleMouseMove = (e: MouseEvent) => {
       setMousePosition({ x: e.clientX, y: e.clientY })
     }
     const handleScroll = () => {
       setScrollY(window.scrollY)
     }
+    const handleResize = () => {
+      setWindowSize({ width: window.innerWidth, height: window.innerHeight })
+    }
+
     window.addEventListener("mousemove", handleMouseMove)
     window.addEventListener("scroll", handleScroll)
+    window.addEventListener("resize", handleResize)
+    
     return () => {
       window.removeEventListener("mousemove", handleMouseMove)
       window.removeEventListener("scroll", handleScroll)
+      window.removeEventListener("resize", handleResize)
     }
   }, [])
 
@@ -64,8 +75,8 @@ export default function StorePage() {
     document.getElementById("products")?.scrollIntoView({ behavior: "smooth" })
   }
 
-  const parallaxX = (mousePosition.x - window.innerWidth / 2) * 0.02
-  const parallaxY = (mousePosition.y - window.innerHeight / 2) * 0.02
+  const parallaxX = windowSize.width ? (mousePosition.x - windowSize.width / 2) * 0.02 : 0
+  const parallaxY = windowSize.height ? (mousePosition.y - windowSize.height / 2) * 0.02 : 0
 
   return (
     <div className="min-h-screen bg-black text-white overflow-x-hidden">
