@@ -50,6 +50,11 @@ export default function RootLayout({
       <body>
         <Navbar />
         {children}
+        {/* Skimlinks */}
+        <Script
+          src="https://s.skimresources.com/js/294433X1781719.skimlinks.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   )
