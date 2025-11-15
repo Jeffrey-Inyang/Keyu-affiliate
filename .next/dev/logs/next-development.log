@@ -1,7 +1,7 @@
-[00:00:04.297] Server  LOG      ✓ Ready in 2.9s
-[00:01:00.167] Server  LOG      ○ Compiling / ...
-[00:01:03.780] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:05.039] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:01.860] Server  LOG      ✓ Ready in 1228ms
+[00:00:06.324] Server  LOG      ○ Compiling / ...
+[00:00:12.231] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:12.540] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -36,8 +36,8 @@ It can also happen if the client has a browser extension installed which messes 
                               <h1>
                               <h1
                                 style={{
-+                                 transform: "translate(-1.7313169330945197px, 1.0012700320993264px)"
--                                 transform: "translate(-1.82235px, -0.822213px)"
++                                 transform: "translate(-1.6722895049686322px, 1.0970176897259984px)"
+-                                 transform: "translate(-0.616544px, -1.90198px)"
 +                                 color: "#8b5cf6"
 -                                 color: "rgb(139, 92, 246)"
                                 }}
@@ -49,5 +49,4 @@ It can also happen if the client has a browser extension installed which messes 
                 ...
               ...
 
-[00:01:30.943] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[00:04:35.228] Server  LOG      ✓ Compiled in 222ms
+[00:00:23.522] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
