@@ -1,80 +1,53 @@
-[00:00:03.941] Server  LOG     
-[00:00:03.941] Server  LOG        We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
-[00:00:03.942] Server  LOG        The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+[00:00:04.297] Server  LOG      ✓ Ready in 2.9s
+[00:01:00.167] Server  LOG      ○ Compiling / ...
+[00:01:03.780] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:05.039] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
-[00:00:03.943] Server  LOG        	- include was updated to add '.next\dev/types/**/*.ts'
-[00:00:03.943] Server  LOG        	- include was updated to add '.next\dev/types/**/*.ts'
-[00:00:03.943] Server  LOG     
-[00:00:03.944] Server  LOG        The following mandatory changes were made to your tsconfig.json:
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
 
-[00:00:03.945] Server  LOG        	- jsx was set to react-jsx (next.js uses the React automatic runtime)
-[00:00:03.946] Server  LOG     
-[00:00:04.723] Server  LOG      ✓ Ready in 3s
-[00:00:10.292] Server  LOG        Reload env: .env.local
-[00:00:18.657] Server  LOG      ○ Compiling / ...
-[00:00:21.225] Server  ERROR    ⨯ ReferenceError: window is not defined
-[00:00:22.175] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:23.333] Browser ERROR   uncaughtError: Error: @supabase/ssr: Your project's URL and API key are required to create a Supabase client!
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
 
-Check your Supabase project's API settings to find these values
+%s%s https://react.dev/link/hydration-mismatch 
 
-https://supabase.com/dashboard/project/_/settings/api
-[00:02:42.745] Server  LOG        Reload env: .env.local
-[00:02:44.203] Server  ERROR    ⨯ ReferenceError: window is not defined
-[00:02:44.972] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:45.186] Browser ERROR   uncaughtError: Error: @supabase/ssr: Your project's URL and API key are required to create a Supabase client!
+  ...
+    <LoadingBoundary name="/" loading={null}>
+      <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+        <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+          <RedirectBoundary>
+            <RedirectErrorBoundary router={{...}}>
+              <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} segmentPath={[...]} ...>
+                <SegmentViewNode type="page" pagePath="page.tsx">
+                  <SegmentTrieNode>
+                  <ClientPageRoot Component={function StorePage} serverProvidedParams={{...}}>
+                    <StorePage params={Promise} searchParams={Promise}>
+                      <div className="jsx-7f6e91...">
+                        <div>
+                        <section ref={{current:null}} className="jsx-7f6e91...">
+                          <div>
+                          <div>
+                          <div>
+                          <div className="jsx-7f6e91...">
+                            <div>
+                            <div className="jsx-7f6e91...">
+                              <h1>
+                              <h1
+                                style={{
++                                 transform: "translate(-1.7313169330945197px, 1.0012700320993264px)"
+-                                 transform: "translate(-1.82235px, -0.822213px)"
++                                 color: "#8b5cf6"
+-                                 color: "rgb(139, 92, 246)"
+                                }}
+                                className="jsx-7f6e919a1a66d054 absolute inset-0 text-[15vw] md:text-[12vw] font-black..."
+                              >
++                               KEYU
+                            ...
+                        ...
+                ...
+              ...
 
-Check your Supabase project's API settings to find these values
-
-https://supabase.com/dashboard/project/_/settings/api
-[00:02:48.922] Server  LOG        Reload env: .env.local
-[00:02:50.747] Server  ERROR    ⨯ ReferenceError: window is not defined
-[00:02:50.794] Server  LOG      ✓ Compiled in 1078ms
-[00:02:50.813] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:02:50.964] Server  LOG        Reload env: .env.local
-[00:02:51.364] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:51.550] Browser ERROR   uncaughtError: Error: @supabase/ssr: Your project's URL and API key are required to create a Supabase client!
-
-Check your Supabase project's API settings to find these values
-
-https://supabase.com/dashboard/project/_/settings/api
-[00:02:57.113] Server  LOG        Reload env: .env.local
-[00:02:57.945] Server  ERROR    ⨯ ReferenceError: window is not defined
-[00:02:58.820] Server  LOG        Reload env: .env.local
-[00:02:59.025] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:59.450] Browser ERROR   uncaughtError: Error: @supabase/ssr: Your project's URL and API key are required to create a Supabase client!
-
-Check your Supabase project's API settings to find these values
-
-https://supabase.com/dashboard/project/_/settings/api
-[00:03:00.268] Server  ERROR    ⨯ ReferenceError: window is not defined
-[00:03:00.835] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:03:01.108] Browser ERROR   uncaughtError: Error: @supabase/ssr: Your project's URL and API key are required to create a Supabase client!
-
-Check your Supabase project's API settings to find these values
-
-https://supabase.com/dashboard/project/_/settings/api
-[00:03:09.868] Server  LOG        Reload env: .env.local
-[00:03:10.281] Server  ERROR    ⨯ ReferenceError: window is not defined
-[00:03:10.300] Server  LOG      ✓ Compiled in 198ms
-[00:03:10.318] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:03:10.636] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:03:11.497] Browser ERROR   uncaughtError: Error: @supabase/ssr: Your project's URL and API key are required to create a Supabase client!
-
-Check your Supabase project's API settings to find these values
-
-https://supabase.com/dashboard/project/_/settings/api
-[00:03:18.910] Server  LOG        Reload env: .env.local
-[00:03:19.248] Server  ERROR    ⨯ ReferenceError: window is not defined
-[00:03:19.265] Server  LOG      ✓ Compiled in 145ms
-[00:03:19.290] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:03:19.581] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:03:34.625] Server  ERROR    ⨯ ReferenceError: window is not defined
-[00:03:35.114] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:11:14.631] Server  LOG     
-[00:11:14.636] Server  LOG     Could not open navbar.tsx in the editor.
-[00:11:14.637] Server  LOG     
-[00:11:14.638] Server  LOG     When running on Windows, file names are checked against an access list to protect against remote code execution attacks. File names may consist only of alphanumeric characters (all languages), periods, dashes, slashes, and underscores.
-[00:11:14.638] Server  LOG     
-[00:13:57.973] Server  LOG      ✓ Compiled in 1175ms
-[00:17:20.559] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:01:30.943] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:04:35.228] Server  LOG      ✓ Compiled in 222ms

@@ -169,11 +169,13 @@ export default function ProductPage() {
             {/* Product Name */}
             <h1 className="text-5xl md:text-7xl font-black mb-6 leading-none tracking-tighter">
               {product.name.split(" ").map((word, i) => (
-                <span
-                  key={i}
-                  className="inline-block hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-white hover:to-white/60 transition-all duration-300"
-                >
-                  {word}{" "}
+                <span key={i}>
+                  <span
+                    className="inline-block hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-white hover:to-white/60 transition-all duration-300"
+                  >
+                    {word}
+                  </span>
+                  {i < product.name.split(" ").length - 1 && " "}
                 </span>
               ))}
             </h1>
