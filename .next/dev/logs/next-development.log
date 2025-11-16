@@ -1,7 +1,7 @@
-[00:00:01.860] Server  LOG      ✓ Ready in 1228ms
-[00:00:06.324] Server  LOG      ○ Compiling / ...
-[00:00:12.231] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:12.540] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:02.505] Server  LOG      ✓ Ready in 1679ms
+[00:00:10.366] Server  LOG      ○ Compiling / ...
+[00:00:14.388] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:14.577] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -36,8 +36,8 @@ It can also happen if the client has a browser extension installed which messes 
                               <h1>
                               <h1
                                 style={{
-+                                 transform: "translate(-1.6722895049686322px, 1.0970176897259984px)"
--                                 transform: "translate(-0.616544px, -1.90198px)"
++                                 transform: "translate(-1.7102633962840752px, -1.0368216410409556px)"
+-                                 transform: "translate(0.485492px, -1.94018px)"
 +                                 color: "#8b5cf6"
 -                                 color: "rgb(139, 92, 246)"
                                 }}
@@ -49,4 +49,439 @@ It can also happen if the client has a browser extension installed which messes 
                 ...
               ...
 
-[00:00:23.522] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:02:02.698] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:03.266] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:05:02.949] Server  LOG      ✓ Compiled in 156ms
+[00:05:03.269] Browser ERROR   ./app/product/[id]/page.tsx:131:70
+Parsing ecmascript source code failed
+  129 |         {/* Back Button - UPDATED onClick */}
+  130 |         <button
+> 131 |           onClick={handleBack} {/* Use the new handleBack function */}
+      |                                                                      ^
+  132 |           className="group mb-16 flex items-center gap-3 text-white/60 hover:text-white transition-colors duration-300"
+  133 |         >
+  134 |           <div className="w-8 h-8 border border-white/20 group-hover:border-white/40 flex items-center justify-center transition-colors duration-300">
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./app/product/[id]/page.tsx [Client Component Browser]
+    ./app/product/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/product/[id]/page.tsx [Client Component SSR]
+    ./app/product/[id]/page.tsx [Server Component]
+[00:05:03.269] Browser ERROR   ./app/product/[id]/page.tsx:131:70
+Parsing ecmascript source code failed
+  129 |         {/* Back Button - UPDATED onClick */}
+  130 |         <button
+> 131 |           onClick={handleBack} {/* Use the new handleBack function */}
+      |                                                                      ^
+  132 |           className="group mb-16 flex items-center gap-3 text-white/60 hover:text-white transition-colors duration-300"
+  133 |         >
+  134 |           <div className="w-8 h-8 border border-white/20 group-hover:border-white/40 flex items-center justify-center transition-colors duration-300">
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./app/product/[id]/page.tsx [Client Component Browser]
+    ./app/product/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/product/[id]/page.tsx [Client Component SSR]
+    ./app/product/[id]/page.tsx [Server Component]
+[00:05:03.269] Browser ERROR   ./app/product/[id]/page.tsx:131:70
+Parsing ecmascript source code failed
+  129 |         {/* Back Button - UPDATED onClick */}
+  130 |         <button
+> 131 |           onClick={handleBack} {/* Use the new handleBack function */}
+      |                                                                      ^
+  132 |           className="group mb-16 flex items-center gap-3 text-white/60 hover:text-white transition-colors duration-300"
+  133 |         >
+  134 |           <div className="w-8 h-8 border border-white/20 group-hover:border-white/40 flex items-center justify-center transition-colors duration-300">
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./app/product/[id]/page.tsx [Client Component Browser]
+    ./app/product/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/product/[id]/page.tsx [Client Component SSR]
+    ./app/product/[id]/page.tsx [Server Component]
+[00:05:03.269] Browser ERROR   ./app/product/[id]/page.tsx:131:70
+Parsing ecmascript source code failed
+  129 |         {/* Back Button - UPDATED onClick */}
+  130 |         <button
+> 131 |           onClick={handleBack} {/* Use the new handleBack function */}
+      |                                                                      ^
+  132 |           className="group mb-16 flex items-center gap-3 text-white/60 hover:text-white transition-colors duration-300"
+  133 |         >
+  134 |           <div className="w-8 h-8 border border-white/20 group-hover:border-white/40 flex items-center justify-center transition-colors duration-300">
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./app/product/[id]/page.tsx [Client Component Browser]
+    ./app/product/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/product/[id]/page.tsx [Client Component SSR]
+    ./app/product/[id]/page.tsx [Server Component]
+[00:05:44.364] Server  LOG      ✓ Compiled in 152ms
+[00:06:39.235] Server  LOG      ✓ Compiled in 136ms
+[00:06:40.279] Browser ERROR   ./app/product/[id]/page.tsx:128:73
+Parsing ecmascript source code failed
+  126 |         {/* Back Button - NOW CORRECTED */}
+  127 |         <button
+> 128 |           onClick={handleBack} {/* Use the custom handleBack function */}
+      |                                                                         ^
+  129 |           className="group mb-16 flex items-center gap-3 text-white/60 hover:text-white transition-colors duration-300"
+  130 |         >
+  131 |           <div className="w-8 h-8 border border-white/20 group-hover:border-white/40 flex items-center justify-center transition-colors duration-300">
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./app/product/[id]/page.tsx [Client Component Browser]
+    ./app/product/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/product/[id]/page.tsx [Client Component SSR]
+    ./app/product/[id]/page.tsx [Server Component]
+[00:06:40.279] Browser ERROR   ./app/product/[id]/page.tsx:128:73
+Parsing ecmascript source code failed
+  126 |         {/* Back Button - NOW CORRECTED */}
+  127 |         <button
+> 128 |           onClick={handleBack} {/* Use the custom handleBack function */}
+      |                                                                         ^
+  129 |           className="group mb-16 flex items-center gap-3 text-white/60 hover:text-white transition-colors duration-300"
+  130 |         >
+  131 |           <div className="w-8 h-8 border border-white/20 group-hover:border-white/40 flex items-center justify-center transition-colors duration-300">
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./app/product/[id]/page.tsx [Client Component Browser]
+    ./app/product/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/product/[id]/page.tsx [Client Component SSR]
+    ./app/product/[id]/page.tsx [Server Component]
+[00:06:40.279] Browser ERROR   ./app/product/[id]/page.tsx:128:73
+Parsing ecmascript source code failed
+  126 |         {/* Back Button - NOW CORRECTED */}
+  127 |         <button
+> 128 |           onClick={handleBack} {/* Use the custom handleBack function */}
+      |                                                                         ^
+  129 |           className="group mb-16 flex items-center gap-3 text-white/60 hover:text-white transition-colors duration-300"
+  130 |         >
+  131 |           <div className="w-8 h-8 border border-white/20 group-hover:border-white/40 flex items-center justify-center transition-colors duration-300">
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./app/product/[id]/page.tsx [Client Component Browser]
+    ./app/product/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/product/[id]/page.tsx [Client Component SSR]
+    ./app/product/[id]/page.tsx [Server Component]
+[00:06:40.279] Browser ERROR   ./app/product/[id]/page.tsx:128:73
+Parsing ecmascript source code failed
+  126 |         {/* Back Button - NOW CORRECTED */}
+  127 |         <button
+> 128 |           onClick={handleBack} {/* Use the custom handleBack function */}
+      |                                                                         ^
+  129 |           className="group mb-16 flex items-center gap-3 text-white/60 hover:text-white transition-colors duration-300"
+  130 |         >
+  131 |           <div className="w-8 h-8 border border-white/20 group-hover:border-white/40 flex items-center justify-center transition-colors duration-300">
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./app/product/[id]/page.tsx [Client Component Browser]
+    ./app/product/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/product/[id]/page.tsx [Client Component SSR]
+    ./app/product/[id]/page.tsx [Server Component]
+[00:06:43.263] Server  ERROR    ⨯ ./app/product/[id]/page.tsx:128:73
+Parsing ecmascript source code failed
+  126 |         {/* Back Button - NOW CORRECTED */}
+  127 |         <button
+> 128 |           onClick={handleBack} {/* Use the custom handleBack function */}
+      |                                                                         ^
+  129 |           className="group mb-16 flex items-center gap-3 text-white/60 hover:text-white transition-colors duration-300"
+  130 |         >
+  131 |           <div className="w-8 h-8 border border-white/20 group-hover:border-white/40 flex items-center justify-center transition-colors duration-300">
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./app/product/[id]/page.tsx [Client Component Browser]
+    ./app/product/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/product/[id]/page.tsx [Client Component SSR]
+    ./app/product/[id]/page.tsx [Server Component]
+
+
+[00:06:43.377] Browser ERROR   ./app/product/[id]/page.tsx:128:73
+Parsing ecmascript source code failed
+  126 |         {/* Back Button - NOW CORRECTED */}
+  127 |         <button
+> 128 |           onClick={handleBack} {/* Use the custom handleBack function */}
+      |                                                                         ^
+  129 |           className="group mb-16 flex items-center gap-3 text-white/60 hover:text-white transition-colors duration-300"
+  130 |         >
+  131 |           <div className="w-8 h-8 border border-white/20 group-hover:border-white/40 flex items-center justify-center transition-colors duration-300">
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./app/product/[id]/page.tsx [Client Component Browser]
+    ./app/product/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/product/[id]/page.tsx [Client Component SSR]
+    ./app/product/[id]/page.tsx [Server Component]
+[00:06:44.132] Browser ERROR   ./app/product/[id]/page.tsx:128:73
+Parsing ecmascript source code failed
+  126 |         {/* Back Button - NOW CORRECTED */}
+  127 |         <button
+> 128 |           onClick={handleBack} {/* Use the custom handleBack function */}
+      |                                                                         ^
+  129 |           className="group mb-16 flex items-center gap-3 text-white/60 hover:text-white transition-colors duration-300"
+  130 |         >
+  131 |           <div className="w-8 h-8 border border-white/20 group-hover:border-white/40 flex items-center justify-center transition-colors duration-300">
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./app/product/[id]/page.tsx [Client Component Browser]
+    ./app/product/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/product/[id]/page.tsx [Client Component SSR]
+    ./app/product/[id]/page.tsx [Server Component]
+[00:06:44.132] Browser ERROR   ./app/product/[id]/page.tsx:128:73
+Parsing ecmascript source code failed
+  126 |         {/* Back Button - NOW CORRECTED */}
+  127 |         <button
+> 128 |           onClick={handleBack} {/* Use the custom handleBack function */}
+      |                                                                         ^
+  129 |           className="group mb-16 flex items-center gap-3 text-white/60 hover:text-white transition-colors duration-300"
+  130 |         >
+  131 |           <div className="w-8 h-8 border border-white/20 group-hover:border-white/40 flex items-center justify-center transition-colors duration-300">
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./app/product/[id]/page.tsx [Client Component Browser]
+    ./app/product/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/product/[id]/page.tsx [Client Component SSR]
+    ./app/product/[id]/page.tsx [Server Component]
+[00:06:44.834] Browser ERROR   ./app/product/[id]/page.tsx:128:73
+Parsing ecmascript source code failed
+  126 |         {/* Back Button - NOW CORRECTED */}
+  127 |         <button
+> 128 |           onClick={handleBack} {/* Use the custom handleBack function */}
+      |                                                                         ^
+  129 |           className="group mb-16 flex items-center gap-3 text-white/60 hover:text-white transition-colors duration-300"
+  130 |         >
+  131 |           <div className="w-8 h-8 border border-white/20 group-hover:border-white/40 flex items-center justify-center transition-colors duration-300">
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./app/product/[id]/page.tsx [Client Component Browser]
+    ./app/product/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/product/[id]/page.tsx [Client Component SSR]
+    ./app/product/[id]/page.tsx [Server Component]
+[00:06:44.834] Browser ERROR   ./app/product/[id]/page.tsx:128:73
+Parsing ecmascript source code failed
+  126 |         {/* Back Button - NOW CORRECTED */}
+  127 |         <button
+> 128 |           onClick={handleBack} {/* Use the custom handleBack function */}
+      |                                                                         ^
+  129 |           className="group mb-16 flex items-center gap-3 text-white/60 hover:text-white transition-colors duration-300"
+  130 |         >
+  131 |           <div className="w-8 h-8 border border-white/20 group-hover:border-white/40 flex items-center justify-center transition-colors duration-300">
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./app/product/[id]/page.tsx [Client Component Browser]
+    ./app/product/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/product/[id]/page.tsx [Client Component SSR]
+    ./app/product/[id]/page.tsx [Server Component]
+[00:06:44.834] Browser ERROR   ./app/product/[id]/page.tsx:128:73
+Parsing ecmascript source code failed
+  126 |         {/* Back Button - NOW CORRECTED */}
+  127 |         <button
+> 128 |           onClick={handleBack} {/* Use the custom handleBack function */}
+      |                                                                         ^
+  129 |           className="group mb-16 flex items-center gap-3 text-white/60 hover:text-white transition-colors duration-300"
+  130 |         >
+  131 |           <div className="w-8 h-8 border border-white/20 group-hover:border-white/40 flex items-center justify-center transition-colors duration-300">
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./app/product/[id]/page.tsx [Client Component Browser]
+    ./app/product/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/product/[id]/page.tsx [Client Component SSR]
+    ./app/product/[id]/page.tsx [Server Component]
+[00:06:45.099] Browser ERROR   ./app/product/[id]/page.tsx:128:73
+Parsing ecmascript source code failed
+  126 |         {/* Back Button - NOW CORRECTED */}
+  127 |         <button
+> 128 |           onClick={handleBack} {/* Use the custom handleBack function */}
+      |                                                                         ^
+  129 |           className="group mb-16 flex items-center gap-3 text-white/60 hover:text-white transition-colors duration-300"
+  130 |         >
+  131 |           <div className="w-8 h-8 border border-white/20 group-hover:border-white/40 flex items-center justify-center transition-colors duration-300">
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./app/product/[id]/page.tsx [Client Component Browser]
+    ./app/product/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/product/[id]/page.tsx [Client Component SSR]
+    ./app/product/[id]/page.tsx [Server Component]
+[00:06:45.349] Browser ERROR   ./app/product/[id]/page.tsx:128:73
+Parsing ecmascript source code failed
+  126 |         {/* Back Button - NOW CORRECTED */}
+  127 |         <button
+> 128 |           onClick={handleBack} {/* Use the custom handleBack function */}
+      |                                                                         ^
+  129 |           className="group mb-16 flex items-center gap-3 text-white/60 hover:text-white transition-colors duration-300"
+  130 |         >
+  131 |           <div className="w-8 h-8 border border-white/20 group-hover:border-white/40 flex items-center justify-center transition-colors duration-300">
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./app/product/[id]/page.tsx [Client Component Browser]
+    ./app/product/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/product/[id]/page.tsx [Client Component SSR]
+    ./app/product/[id]/page.tsx [Server Component]
+[00:06:45.635] Browser ERROR   uncaughtError: Error: ./app/product/[id]/page.tsx:128:73
+Parsing ecmascript source code failed
+  126 |         {/* Back Button - NOW CORRECTED */}
+  127 |         <button
+> 128 |           onClick={handleBack} {/* Use the custom handleBack function */}
+      |                                                                         ^
+  129 |           className="group mb-16 flex items-center gap-3 text-white/60 hover:text-white transition-colors duration-300"
+  130 |         >
+  131 |           <div className="w-8 h-8 border border-white/20 group-hover:border-white/40 flex items-center justify-center transition-colors duration-300">
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./app/product/[id]/page.tsx [Client Component Browser]
+    ./app/product/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/product/[id]/page.tsx [Client Component SSR]
+    ./app/product/[id]/page.tsx [Server Component]
+
+
+[00:06:45.760] Browser ERROR   ./app/product/[id]/page.tsx:128:73
+Parsing ecmascript source code failed
+  126 |         {/* Back Button - NOW CORRECTED */}
+  127 |         <button
+> 128 |           onClick={handleBack} {/* Use the custom handleBack function */}
+      |                                                                         ^
+  129 |           className="group mb-16 flex items-center gap-3 text-white/60 hover:text-white transition-colors duration-300"
+  130 |         >
+  131 |           <div className="w-8 h-8 border border-white/20 group-hover:border-white/40 flex items-center justify-center transition-colors duration-300">
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./app/product/[id]/page.tsx [Client Component Browser]
+    ./app/product/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/product/[id]/page.tsx [Client Component SSR]
+    ./app/product/[id]/page.tsx [Server Component]
+[00:06:45.916] Browser ERROR   ./app/product/[id]/page.tsx:128:73
+Parsing ecmascript source code failed
+  126 |         {/* Back Button - NOW CORRECTED */}
+  127 |         <button
+> 128 |           onClick={handleBack} {/* Use the custom handleBack function */}
+      |                                                                         ^
+  129 |           className="group mb-16 flex items-center gap-3 text-white/60 hover:text-white transition-colors duration-300"
+  130 |         >
+  131 |           <div className="w-8 h-8 border border-white/20 group-hover:border-white/40 flex items-center justify-center transition-colors duration-300">
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./app/product/[id]/page.tsx [Client Component Browser]
+    ./app/product/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/product/[id]/page.tsx [Client Component SSR]
+    ./app/product/[id]/page.tsx [Server Component]
+[00:06:46.276] Browser ERROR   ./app/product/[id]/page.tsx:128:73
+Parsing ecmascript source code failed
+  126 |         {/* Back Button - NOW CORRECTED */}
+  127 |         <button
+> 128 |           onClick={handleBack} {/* Use the custom handleBack function */}
+      |                                                                         ^
+  129 |           className="group mb-16 flex items-center gap-3 text-white/60 hover:text-white transition-colors duration-300"
+  130 |         >
+  131 |           <div className="w-8 h-8 border border-white/20 group-hover:border-white/40 flex items-center justify-center transition-colors duration-300">
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./app/product/[id]/page.tsx [Client Component Browser]
+    ./app/product/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/product/[id]/page.tsx [Client Component SSR]
+    ./app/product/[id]/page.tsx [Server Component]
+[00:07:18.383] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:07:18.405] Server  LOG      ✓ Compiled in 267ms
+[00:07:20.392] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:34.610] Server  LOG      ✓ Compiled in 132ms
+[00:07:37.904] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:07:42.653] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:53.992] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior

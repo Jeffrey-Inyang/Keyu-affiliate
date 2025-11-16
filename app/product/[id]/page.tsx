@@ -14,8 +14,17 @@ export default function ProductPage() {
   const [imageLoaded, setImageLoaded] = useState(false)
   const imageRef = useRef<HTMLDivElement>(null)
   const supabase = createClient()
+  
+  // New state to check if the browser history allows going back
+  const [canGoBack, setCanGoBack] = useState(false)
 
   useEffect(() => {
+    // Check if there is a history entry that is not the current page
+    // If window.history.length is greater than 1, we assume we can safely use router.back()
+    if (typeof window !== 'undefined' && window.history.length > 1) {
+      setCanGoBack(true)
+    }
+
     const fetchProduct = async () => {
       if (!params.id) return
 
@@ -44,6 +53,18 @@ export default function ProductPage() {
     window.addEventListener("mousemove", handleMouseMove)
     return () => window.removeEventListener("mousemove", handleMouseMove)
   }, [])
+
+  // Handler for the back button logic
+  const handleBack = () => {
+    if (canGoBack) {
+      // Normal behavior: go back one page in history
+      router.back()
+    } else {
+      // Fallback: If no history, navigate to the homepage ("/")
+      // router.replace is used to prevent the user from hitting "back" again to return here.
+      router.replace("/")
+    }
+  }
 
   if (isLoading) {
     return (
@@ -102,9 +123,9 @@ export default function ProductPage() {
       </div>
 
       <div className="relative max-w-7xl mx-auto px-6 pt-24 pb-12">
-        {/* Back Button */}
+        {/* Back Button - FIXED SYNTAX ERROR */}
         <button
-          onClick={() => router.back()}
+          onClick={handleBack}
           className="group mb-16 flex items-center gap-3 text-white/60 hover:text-white transition-colors duration-300"
         >
           <div className="w-8 h-8 border border-white/20 group-hover:border-white/40 flex items-center justify-center transition-colors duration-300">
