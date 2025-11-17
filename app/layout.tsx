@@ -16,14 +16,13 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   themeColor: "#000000",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
   userScalable: true,
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
@@ -40,7 +39,7 @@ export default function RootLayout({
             gtag('config', 'G-60367P2WSN');
           `}
         </Script>
-        
+
         {/* ShareThis */}
         <Script 
           src="https://platform-api.sharethis.com/js/sharethis.js#property=6916e80590a70be8f33c07ed&product=inline-share-buttons"
@@ -50,9 +49,10 @@ export default function RootLayout({
       <body>
         <Navbar />
         {children}
+
         {/* Skimlinks */}
         <Script
-          src="https://s.skimresources.com/js/294433X1781719.skimlinks.js"
+          src="https://s.skimresources.com/js/294592X1781883.skimlinks.js"
           strategy="afterInteractive"
         />
       </body>
